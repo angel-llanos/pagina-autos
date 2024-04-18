@@ -1,0 +1,22 @@
+.fondo{
+    background-image:url(/assets/img/fondo.jpg);
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.tamano{
+    height: 585px;
+    width: 100vw;
+    object-fit: cover;
+}
+.bordes{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.mini{
+    height: 42px;
+    width: 32px;
+}
