@@ -12,7 +12,6 @@
 </head>
 
 <!--Navbar-->
-
 <body class="body-bg">
     <nav class="navbar navbar-expand-lg bg-body-primary" data-bs-theme="dark">
         <div class="container-fluid">
@@ -27,15 +26,9 @@
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Productos
-                        </a>
-                        <ul class="dropdown-menu bg-black">
-                          <li><a class="dropdown-item" href="#">Por modelo</a></li>
-                          <li><a class="dropdown-item" href="#">Por precio</a></li>
-                        </ul>
-                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./indexProductos.html">Productos</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./indexLogin.html">Acceder</a>
                     </li>
@@ -47,96 +40,95 @@
         </div>
     </nav>
 
-    <!--Aqui va lo de esta página-->
+    <!--Aqui va lo de la página-->
     <main>
-        <div class="text-center barra">
+        <div class="text-center barra mb-4">
             <select name="categorias" class="btn btn-dark">
-                <option value="">  </option>
-                <option value="1">Stock Disponible</option>
-                <option value="2">Año</option>
-                <option value="3">Modelo</option>
-                <option value="4">Version</option>
+                <option value="">Filtrar por...</option>
+                <option value="1">Orden alfabético</option>
+                <option value="2">Stock Disponible</option>
+                <option value="3">Año</option>
+                <option value="4">Modelo</option>
                 <option value="5">Precio 🔼</option>
                 <option value="6">Precio 🔽</option>
             </select>
-
         </div>
+
         <div class="row mx-2">
             <div class="text-center col-xs-12 col-sm-12 col-md-4 col-lg-4 mx-auto">
-                <div class="card d-flex text-center justify-content-between mx-auto mt-1 bg-black" style="width: 15rem;">
+                <div class="card d-flex text-center justify-content-between mx-auto mt-1 bg-black" style="width: 17rem;">
                     <img src="./assets/img/jaguar-f-type.jpg" class="card-img-top" alt="Jaguar F-Type">
                     <div class="card-body">
                         <h5 class="card-title text-white">Jaguar F-Type</h5>
-                        <p class="card-text"><small>Quedan 50 en Stock</small></p>
-                        <p class="card-text text-white">Precio: $60,000,000</p>
-                        <a href="./indexJaguar.html" class="btn btn-light">ver mas</a>
+                        <p class="card-text"><small>6 en Stock</small></p>
+                        <p class="card-text text-white">Año: 2022</p>
+                        <p class="card-text text-white fs-5">$69,500,000</p>
+                        <a href="./indexJaguar.html" class="btn btn-light">Ver más</a>
                     </div>
                 </div>
             </div>
     
             <div class="text-center col-xs-12 col-sm-12 col-md-4 col-lg-4 mx-auto">
-                <div class="card d-flex text-center justify-content-between mx-auto mt-1 bg-black" style="width: 15rem;">
+                <div class="card d-flex text-center justify-content-between mx-auto mt-1 bg-black" style="width: 17rem;">
                     <img src="./assets/img/koenigsegg.jpg" class="card-img-top" alt="Koenigsegg Agera R">
                     <div class="card-body">
                         <h5 class="card-title text-white">Koenigsegg Agera R</h5>
-                        <p class="card-text"><small>Quedan 0 en stock</small></p>
-                        <p class="card-text text-white">El Agera, acude a un diseño de carrocería que más que un vehículo de calle, 
-                            cumple con todos los estereotipos de un modelo de competición,</p>
-                        <p class="card-text text-white">año: 2020</p>
-                        <p class="card-text text-white">Precio: $60,000,000</p>
-                        <a href="#" class="btn btn-light">Comprar</a>
+                        <p class="card-text"><small>0 en Stock</small></p>
+                        <p class="card-text text-white">Año: 2020</p>
+                        <p class="card-text text-white fs-5">$2,865,630,000</p>
+                        <a href="#" class="btn btn-light disabled" aria-disabled="true">Agotado</a>
                     </div>
                 </div>
             </div>
     
             <div class="text-center col-xs-12 col-sm-12 col-md-4 col-lg-4 mx-auto">
-                <div class="card d-flex text-center justify-content-between mx-auto mt-1 bg-black" style="width: 16rem;">
+                <div class="card d-flex text-center justify-content-between mx-auto mt-1 bg-black" style="width: 17rem;">
                     <img src="./assets/img/nissan-gta-r35.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title text-white">El Koringa</h5>
-                        <p class="card-text"><small>Autor: kai_fury</small></p>
-                        <p class="card-text text-white">Pintura que representa los años pasados del artista que la creó, en los cuales sufrió
-                            de una profunda depresión y brotes psicóticos.</p>
-                        <a href="#" class="btn btn-light">Ver más</a>
+                        <h5 class="card-title text-white">Nissan GTR R35</h5>
+                        <p class="card-text"><small>3 en Stock</small></p>
+                        <p class="card-text text-white">Año: 2010</p>
+                        <p class="card-text text-white fs-5">$150,000,000</p>
+                        <a href="./indexNissanGTR.html" class="btn btn-light">Ver más</a>
                     </div>
                 </div>
             </div>
     
-            <div class="text-center col-xs-12 col-sm-12 col-md-4 col-lg-4 mx-auto">
-                <div class="card d-flex text-center justify-content-between mx-auto mt-1 bg-black" style="width: 16rem;">
-                    <img src="./assets/img/images.jpg" class="card-img-top" alt="...">
+            <div class="text-center col-xs-12 col-sm-12 col-md-4 col-lg-4 mx-auto mt-4">
+                <div class="card d-flex text-center justify-content-between mx-auto mt-1 bg-black" style="width: 17rem;">
+                    <img src="./assets/img/720s.webp" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title text-white">El Koringa</h5>
-                        <p class="card-text"><small>Autor: kai_fury</small></p>
-                        <p class="card-text text-white">Pintura que representa los años pasados del artista que la creó, en los cuales sufrió
-                            de una profunda depresión y brotes psicóticos.</p>
-                        <a href="#" class="btn btn-light">Ver más</a>
+                        <h5 class="card-title text-white">McLaren 720S</h5>
+                        <p class="card-text"><small>0 en Stock</small></p>
+                        <p class="card-text text-white">Año: 2020</p>
+                        <p class="card-text text-white fs-5">$330,750,000</p>
+                        <a href="#" class="btn btn-light disabled" aria-disabled="true">Agotado</a>
                     </div>
                 </div>
             </div>
     
-            <div class="text-center col-xs-12 col-sm-12 col-md-4 col-lg-4 mx-auto">
-                <div class="card d-flex text-center justify-content-between mx-auto mt-1 bg-black" style="width: 16rem;">
-                    <img src="./assets/img/images.jpg" class="card-img-top" alt="...">
+            <div class="text-center col-xs-12 col-sm-12 col-md-4 col-lg-4 mx-auto mt-4">
+                <div class="card d-flex text-center justify-content-between mx-auto mt-1 bg-black" style="width: 17rem;">
+                    <img src="./assets/img/350z.webp" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title text-white">El Koringa</h5>
-                        <p class="card-text"><small>Autor: kai_fury</small></p>
-                        <p class="card-text text-white">Pintura que representa los años pasados del artista que la creó, en los cuales sufrió
-                            de una profunda depresión y brotes psicóticos.</p>
-                        <a href="#" class="btn btn-light">Ver más</a>
+                        <h5 class="card-title text-white">Nissan 350z</h5>
+                        <p class="card-text"><small>10 en Stock</small></p>
+                        <p class="card-text text-white">Año: 2004</p>
+                        <p class="card-text text-white fs-5">$15,500,000</p>
+                        <a href="./indexNissan350z.html" class="btn btn-light">Ver más</a>
                     </div>
                 </div>
             </div>
     
-            <div class="text-center col-xs-12 col-sm-12 col-md-4 col-lg-4 mx-auto">
-                <div class="card d-flex text-center justify-content-between mx-auto mt-1 bg-black" style="width: 16rem;">
-                    <img src="./assets/img/images.jpg" class="card-img-top" alt="...">
+            <div class="text-center col-xs-12 col-sm-12 col-md-4 col-lg-4 mx-auto mt-4">
+                <div class="card d-flex text-center justify-content-between mx-auto mt-1 bg-black" style="width: 17rem;">
+                    <img src="./assets/img/mustang.webp" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title text-white">El Koringa</h5>
-                        <p class="card-text"><small>Autor: kai_fury</small></p>
-                        <p class="card-text text-white">Pintura que representa los años pasados del artista que la creó, en los cuales sufrió
-                            de una profunda depresión y brotes psicóticos.</p>
-                        <a href="#" class="btn btn-light">Ver más</a>
+                        <h5 class="card-title text-white">Ford Mustang Shelby R</h5>
+                        <p class="card-text"><small>0 en Stock</small></p>
+                        <p class="card-text text-white">Año: 2020</p>
+                        <p class="card-text text-white fs-5">$350,000,000</p>
+                        <a href="#" class="btn btn-light disabled" aria-disabled="true">Agotado</a>
                     </div>
                 </div>
             </div>
